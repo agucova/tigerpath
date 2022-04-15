@@ -4,7 +4,7 @@ import {
   isFallSemester,
   isSpringSemester,
   convertSemToTermCode,
-} from 'utils/SemesterUtils';
+} from './utils/SemesterUtils';
 
 // TODO: refactor from here and SearchCard.js
 const BASE_COURSE_OFFERINGS_URL = 'https://www.princetoncourses.com/course/';

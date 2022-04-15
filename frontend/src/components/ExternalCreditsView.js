@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Semester from 'components/Semester';
-import CourseCard from 'components/CourseCard';
-import ExternalCreditForm from 'components/ExternalCreditForm';
-import { EXTERNAL_CREDITS_SEMESTER_INDEX } from 'utils/SemesterUtils';
+import Semester from './Semester';
+import CourseCard from './CourseCard';
+import ExternalCreditForm from './ExternalCreditForm';
+import { EXTERNAL_CREDITS_SEMESTER_INDEX } from '../utils/SemesterUtils';
 
 const ECContent = styled.div`
   display: grid;

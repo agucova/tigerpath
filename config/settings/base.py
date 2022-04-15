@@ -1,9 +1,14 @@
 import os
+import dotenv
 import dj_database_url
 
+dotenv.load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# __file__ = /config/settings/base.py
+# BASE_DIR = /config/
+# REACT_BASE_DIR = /
 REACT_BASE_DIR = os.path.dirname(BASE_DIR)
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(',')
@@ -123,7 +128,7 @@ X_FRAME_OPTIONS = 'DENY'
 
 # CAS Authentication
 
-CAS_SERVER_URL = 'https://fed.princeton.edu/cas/'
+CAS_SERVER_URL = 'https://cas.agucova.dev/cas/'
 CAS_FORCE_CHANGE_USERNAME_CASE = 'lower'
 CAS_LOGIN_MSG = None
 CAS_LOGGED_MSG = None

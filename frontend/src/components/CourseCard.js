@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import { Draggable } from 'react-beautiful-dnd';
-import { EXTERNAL_CREDITS_SEMESTER_INDEX } from 'utils/SemesterUtils';
+import { EXTERNAL_CREDITS_SEMESTER_INDEX } from '../utils/SemesterUtils';
 
 export default class CourseCard extends Component {
   removeCourse = () => {

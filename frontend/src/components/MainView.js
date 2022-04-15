@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
-import Schedule from 'components/Schedule';
-import ExternalCreditsView from 'components/ExternalCreditsView';
+import Schedule from './Schedule';
+import ExternalCreditsView from './ExternalCreditsView';
 
 const Content = styled.div`
   height: calc(100vh - 98px);

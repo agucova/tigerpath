@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import { ajaxSetup } from 'AjaxSetup';
-import Search from 'components/Search';
-import MainView from 'components/MainView';
-import Requirements from 'components/Requirements';
+import { ajaxSetup } from '../AjaxSetup';
+import Search from './Search';
+import MainView from './MainView';
+import Requirements from './Requirements';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { ThemeProvider } from 'styled-components';
-import { TIGERPATH_THEME } from 'styles/theme';
-import { DEFAULT_SCHEDULE } from 'utils/SemesterUtils';
+import { TIGERPATH_THEME } from '../styles/theme';
+import { DEFAULT_SCHEDULE } from '../utils/SemesterUtils';
 
 const RADIX = 10;
 

@@ -98,9 +98,17 @@ def update_profile(request, profile_form):
 
 # get onboarding initial values from tigerbook
 def get_onboarding_initial_values(username):
+
     majors = models.Major.objects.all()
     initial_values = {}
-    student_json = utils.get_student_info(username)
+    # student_json = utils.get_student_info(username)
+    student_json = {
+        "nickname": "agucova",
+        "first_name": "Alexandra",
+        "last_name": "Gucova",
+        "major_code": "ENG",
+        "class_year": "2019",
+    }
     if student_json:
         # get first name
         if student_json['first_name']:

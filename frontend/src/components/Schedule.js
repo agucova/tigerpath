@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import Semester from 'components/Semester';
+import Semester from './Semester';
 import styled from 'styled-components';
-import { getSemesterNames } from 'utils/SemesterUtils';
-import { addPopover } from 'Popover';
+import { getSemesterNames } from '../utils/SemesterUtils';
+import { addPopover } from '../Popover';
 
 const Semesters = styled.div`
   display: grid;

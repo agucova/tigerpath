@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CourseCard from 'components/CourseCard';
+import CourseCard from './CourseCard';
 import { Droppable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
 import {
@@ -8,7 +8,7 @@ import {
   getSemesterType,
   isFallSemester,
   isSpringSemester,
-} from 'utils/SemesterUtils';
+} from '../utils/SemesterUtils';
 
 const SEMESTER_BODY_COLOR = Object.freeze({
   GREY: Symbol('greySemBody'),
